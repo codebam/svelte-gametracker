@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="modulepreload" href="/_app/start-c0120134.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-4e3ec923.js">
+		<link rel="modulepreload" href="/_app/layout.svelte-d3a80887.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-0980a913.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-b4bf510a.css">
+
+		<script type="module">
+			import { start } from "/_app/start-c0120134.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/layout.svelte-d3a80887.js"),
+						import("/_app/pages/index.svelte-0980a913.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<h1 class="svelte-1vwhivb">Svelte Game Tracker</h1>
+<form class="svelte-1vwhivb"><label for="name">Name</label>
+    <input required id="name">
+    <label for="publisher">Publisher</label>
+    <input required id="publisher">
+    <label for="genre">Genre</label>
+    <input required id="genre">
+    <label for="year">Year</label>
+    <input required type="year" id="year">
+    <button type="submit">Add game</button></form>
+<table class="svelte-1vwhivb"><tr class="table-head svelte-1vwhivb"><td class="svelte-1vwhivb">Name</td>
+        <td class="svelte-1vwhivb">Publisher</td>
+        <td class="svelte-1vwhivb">Genre</td>
+        <td class="svelte-1vwhivb">Year</td>
+        <td class="svelte-1vwhivb"></td></tr>
+    
+</table>
+
+
+
+			
+		</div>
+	</body>
+</html>
