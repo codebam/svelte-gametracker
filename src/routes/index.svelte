@@ -73,14 +73,22 @@
 
 <h1>Svelte Game Tracker</h1>
 <form on:submit|preventDefault={handleSubmit}>
-    <label for="name">Name</label>
-    <input required id="name" bind:value={name}/>
-    <label for="publisher">Publisher</label>
-    <input required id="publisher" bind:value={publisher}/>
-    <label for="genre">Genre</label>
-    <input required id="genre" bind:value={genre}/>
-    <label for="year">Year</label>
-    <input required type="year" id="year" bind:value={year}/>
+    <div>
+        <label for="name">Name</label>
+        <input required id="name" bind:value={name}/>
+    </div>
+    <div>
+        <label for="publisher">Publisher</label>
+        <input required id="publisher" bind:value={publisher}/>
+    </div>
+    <div>
+        <label for="genre">Genre</label>
+        <input required id="genre" bind:value={genre}/>
+    </div>
+    <div>
+        <label for="year">Year</label>
+        <input required id="year" bind:value={year}/>
+    </div>
     <button type="submit">Add game</button>
 </form>
 <table>
@@ -105,6 +113,14 @@
 <style>
     h1, form {
         text-align: center;
+    }
+    label {
+        display: inline-block;
+        min-width: 6em;
+        margin-top: 0.5em;
+    }
+    button {
+        margin-top: 0.5em;
     }
     table {
         margin-top: 2em;

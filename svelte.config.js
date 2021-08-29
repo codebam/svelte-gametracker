@@ -17,7 +17,8 @@ const config = {
 		}),
 		paths: {
 			base: '/svelte-gametracker'
-		}
+		},
+		appDir: 'app_'
 	}
 };
 
