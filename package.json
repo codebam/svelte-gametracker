@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
+    "deploy": "gh-pages -d build",
     "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -11,6 +12,7 @@
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
   "devDependencies": {
+    "@sveltejs/adapter-static": "^1.0.0-next.17",
     "@sveltejs/kit": "next",
     "@types/lodash": "^4.14.172",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
